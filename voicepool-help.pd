@@ -1,0 +1,28 @@
+#N canvas 266 142 509 282 10;
+#X msg 22 106 post;
+#X floatatom 10 193 5 0 0 0 - - -;
+#X floatatom 10 84 5 0 0 0 - - -;
+#X msg 10 14 5000;
+#X msg 51 14 10000;
+#X floatatom 79 193 5 0 0 0 - - -;
+#X msg 31 128 clear;
+#X obj 10 171 voicepool 20;
+#X text 119 14 [voicepool]: voice allocator;
+#X text 121 37 allocation happens in lifo way \, so if more than one
+voice is allocated at the same logical time the arrival time will in
+inverse order;
+#X text 121 172 voicepool no_voice [default 10];
+#X text 121 191 outlet: allocated voice id [0 \, no_voice-1] \, no.
+of allocated voice;
+#X text 119 128 |clear<(s) all vocies;
+#X text 119 106 |post< displays id of available voices;
+#X text 121 84 inlet accepts float as locking time of one voice;
+#X text 9 229 if available pool is empty \, a message will appear in
+the console. no real-time (re)allocation will happen.;
+#X connect 0 0 7 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X connect 7 1 5 0;
