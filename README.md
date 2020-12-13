@@ -1,2 +1,3 @@
 # voicepool
-A voice pool external in Pd.
+
+A voice allocator external in Pd.
