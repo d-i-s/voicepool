@@ -1,6 +1,6 @@
 # voicepool
 
-A voice allocator external in Pd. [voicepool] is used as part of my Pd project of *Audible Ecosystemics no. 3a* of Agostino Di Scipio: https://agostinodiscipio.xoom.it/adiscipi/index.html
+A voice allocator external in Pd. [voicepool] is used as part of my Pd project about *Audible Ecosystemics no. 3a* of Agostino Di Scipio: https://agostinodiscipio.xoom.it/adiscipi/index.html
 
 Source code and Linux, OSX and Windows binary are provided.
 
