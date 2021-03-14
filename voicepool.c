@@ -137,6 +137,10 @@ static void voicepool_free(t_voicepool *x)
   }
   freebytes(x->x_nodepool->np_pool,sizeof(t_node**));
   freebytes(x->x_nodepool,sizeof(t_nodepool*));
+
+  outlet_free(x->x_float_outlet); // fix 210314
+  outlet_free(x->x_no_alive_outlet);
+  
 }
 
 static void *voicepool_new(t_floatarg f)
